@@ -1,5 +1,5 @@
 {
-  "name" : "ardteam/ardteam-project",
+  "name" : "ardteam/admin-project",
   "description" : "Admin Bundle",
   "type" : "symfony-bundle",
   "authors" : [{
