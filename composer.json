@@ -34,7 +34,6 @@
       "AT\\AdminBundle" : ""
     }
   },
-//  "target-dir" : "AT/AdminBundle",
   "repositories" : [
   ],
   "extra" : {
