@@ -34,9 +34,9 @@
       "AT\\AdminBundle" : ""
     }
   },
-  "target-dir" : "AT/AdminBundle",
+//  "target-dir" : "AT/AdminBundle",
   "repositories" : [
-  }],
+  ],
   "extra" : {
     "branch-alias" : {
       "dev-master" : "1.x-dev"
