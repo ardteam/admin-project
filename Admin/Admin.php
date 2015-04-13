@@ -18,6 +18,7 @@ class Admin extends BaseAdmin
 
     /**
      * @param FormBuilder $formBuilder
+     * @throws \Exception
      */
     public function defineFormBuilder(FormBuilder $formBuilder)
     {
@@ -27,6 +28,8 @@ class Admin extends BaseAdmin
             $method = "configure" . ucwords($this->getMode()) . "Fields";
             if(method_exists($this, $method)) {
                 $this->{$method}($mapper);
+            } else {
+                throw new \Exception("The function '" . $method . "' doesn't exist in '" . get_class($this) . "''");
             }
         } else {
             $this->configureFormFields($mapper);
