@@ -1,0 +1,38 @@
+at_user:
+    resource: "@ATUserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+at_project:
+    resource: "@ATProjectBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+at_schedule:
+    resource: "@ATScheduleBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+at_character:
+    resource: "@ATCharacterBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+at_core:
+    resource: "@ATCoreBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+#at_scenario:
+#    resource: "@ATScenarioBundle/Controller/"
+#    type:     annotation
+#    prefix:   /
+
+admin:
+    resource: '@ATScenarioBundle/Resources/config/routing/sonata_admin.xml'
+    prefix: /
+
+_sonata_admin:
+    resource: .
+    type: sonata_admin
+    prefix: /
