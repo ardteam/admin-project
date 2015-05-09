@@ -12,5 +12,8 @@ use Sonata\AdminBundle\Controller\CRUDController;
 
 class ATCRUDController extends CRUDController
 {
-
+    public function getRequest()
+    {
+        return $this->container->get("request");
+    }
 }
