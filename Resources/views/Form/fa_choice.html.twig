@@ -9,9 +9,9 @@
         }
 
         $(document).ready(function(){
-            alert("test");
-            $(".at-fa-choice").select2({
-                templateResult: formatState
+            $("select.at-fa-choice").select2({
+                formatResult: formatState,
+                selectionResult: formatState
             });
         });
     </script>
