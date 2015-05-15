@@ -218,7 +218,7 @@ class ATCRUDController extends CRUDController
         ), $options));
     }
 
-    protected function logModelManagerException(ModelManagerException $e)
+    protected function logModelManagerException($e)
     {
         $context = array('exception' => $e);
         if ($e->getPrevious()) {
