@@ -1,0 +1,20 @@
+{% block at_fa_choice_widget %}
+    {{ block("choice_widget") }}
+
+    <script>
+        function formatState (state) {
+            if (!state.id) { return state.text; }
+            var $state = $(
+                    '<span class="fa fa-"'+ state.element.value.toLowerCase() + '"></span>' + state.text
+            );
+            return $state;
+        }
+
+        $(document).ready(function(){
+            alert("test");
+            $(".at-fa-choice").select2({
+                templateResult: formatState
+            });
+        });
+    </script>
+{% endblock at_fa_choice_widget %}
