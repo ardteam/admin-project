@@ -4,10 +4,8 @@
     <script>
         function formatState (state) {
             if (!state.id) { return state.text; }
-            var $state = $(
-                    '<span class="fa fa-"'+ state.element.value.toLowerCase() + '"></span>' + state.text
-            );
-            return $state;
+
+            return $('<span><span class="fa fa-"'+ state.text.trim() + '"></span>' + state.text + "</span>");
         }
 
         $(document).ready(function(){
