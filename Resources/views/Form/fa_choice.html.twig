@@ -5,13 +5,13 @@
         function formatState (state) {
             if (!state.id) { return state.text; }
 
-            return $('<span><span class="fa fa-"'+ state.text.trim() + '"></span>' + state.text + "</span>");
+            return $('<span><span class="fa fa-'+ state.text.trim() + '"></span> ' + state.text + "</span>");
         }
 
         $(document).ready(function(){
             $("select.at-fa-choice").select2({
                 formatResult: formatState,
-                selectionResult: formatState
+                formatSelection: formatState
             });
         });
     </script>
