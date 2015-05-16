@@ -5,7 +5,7 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="at.type.fa_choice.class">AT\Portal\CoreBundle\Form\FAChoiceType</parameter>
+        <parameter key="at.type.fa_choice.class">AT\AdminBundle\Form\FAChoiceType</parameter>
     </parameters>
 
     <services>
